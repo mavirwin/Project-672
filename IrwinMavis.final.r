@@ -11,8 +11,7 @@ library("tensorflow")
 
 Note1=cat("The file with")
 
-data=read.csv("https://raw.githubusercontent.com/netuohcs/BiBC_essentials_20200916/master/data/penguins_lter.csv")
-data.int=read.csv("https://raw.githubusercontent.com/mavirwin/raw-data/main/penguins_lter.integer.csv")
+data=read.csv("https://github.com/mavirwin/Project-672/blob/main/ST00114_subset.csv")
 #data=read.table("C:/Users/Videosystem/Desktop/RocASAsamples/Mavis_samples/archive/penguins_lter.txt", header=TRUE, sep="\t", )
 #setwd("C:/Users/Videosystem/Desktop/RocASAsamples/Mavis_samples/archive")
 getwd()
