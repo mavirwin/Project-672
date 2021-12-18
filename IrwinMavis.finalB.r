@@ -43,23 +43,24 @@ print(data)
 # names(data)[21:23] <- 'WTM'
 # names(data)[24:25] <- 'WTF'
 cat("Problem: the renaming process makes those I wanted the excat name was automatically adding numbers.\n
-Since I need to finishe this ASAP, I tried to change names in excel and set formula as text to keep \n
-    them the exact way as entered. But that doesn't work... why can the iris species have the same names? ")
+Since I need to finishe this ASAP, I tried to add names in excel and set formula as text to keep \n
+    them the exact way as entered. But that doesn't work... how did the iris's individual plants grouped as species have the same names? ")
            
 data2=data[-c(1,2)]
 
 data3= as.data.frame(t(data2))
-head=print(data3)
+head(data3)
 
 #mouse line groups as factor
 
-mg=as.factor(data3$Pheno.nickname)
-#Error: $ operator is invalid for atomic vectors
+mg=(data3$Pheno.nickname)
+
+print(mg)
 
 #phenotype evaluations
 
-dataframe2 = data.frame(mg,RAS,PPI1,PPI2,PPI3,PPI4,Global)
-subframe2 = data.frame(RAS,PPI1,PPI2,PPI3,PPI4,Global)
+dataframe2 = data.frame(mg,data3$RAS,data3$PPI1,data3$PPI2,data3$PPI3,data3$PPI4,data3$Global)
+subframe2 = data.frame(data3$RAS,data3$PPI1,data3$PPI2,data3$PPI3,data3$PPI4,data3$Global)
 print (subframe2)
 
 
