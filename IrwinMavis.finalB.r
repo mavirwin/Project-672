@@ -43,7 +43,8 @@ print(data)
 # names(data)[21:23] <- 'WTM'
 # names(data)[24:25] <- 'WTF'
 cat("Problem: the renaming process makes those I wanted the excat name was automatically adding numbers.\n
-Thus, I changed the names in excel, since I need to finishe this ASAP.")
+Since I need to finishe this ASAP, I tried to change names in excel and set formula as text to keep \n
+    them the exact way as entered. But that doesn't work... why can the iris species have the same names? ")
            
 data2=data[-c(1,2)]
 
